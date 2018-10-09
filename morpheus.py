@@ -22,7 +22,6 @@ class Server:
                 c.sendall(pickle.dumps(on_recieve(pickle.loads(_data))))
     @jnet_port_forwarding.PortManager.reset_mapping
     def __exit__(self, *args):
-        print(self.__dict__)
         self._socket.close()
 
 
@@ -52,12 +51,11 @@ if __name__ == '__main__':
         _max_connections = 5
         main_host = ''
         lan_ip = jnet_port_forwarding.PortManager.get_my_ip()
-        root = 'zorro16'
+        root = 'ROOTSTUFFHERE'
         port = 6000
         from_port = 8423
         forward_ports = True
 
     with Manage_Server() as server:
-        print('server')
         server.accept_connections()
     

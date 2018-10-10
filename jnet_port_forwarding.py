@@ -87,7 +87,7 @@ if __name__ == '__main__':
    
 
     class NetVals:
-        root = ROOTSTUFF
+        root = 'zorro16'
         lan_ip = '192.168.0.5'
         forward_ports = True
         port = 6000

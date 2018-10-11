@@ -87,7 +87,7 @@ if __name__ == '__main__':
    
 
     class NetVals:
-        root = 'PASSWORDGOESHERE'
+        root = 'PASSWORD'
         lan_ip = '192.168.0.5'
         forward_ports = True
         port = 6000
@@ -98,4 +98,3 @@ if __name__ == '__main__':
         return 
 
     print(_wrap_ports(NetVals))
-
